@@ -8,7 +8,7 @@ using namespace std;
 /// <param name="group1">higher count of the two</param>
 /// <param name="group2">lower count of the two</param>
 /// <returns></returns>
-float permutationsHelper(int total, int group1, int group2)
+int permutationsHelper(int total, int group1, int group2)
 {
     //(factorials[total] / (factorials[group1] * factorials[group2]));
     if (total == group1)
@@ -17,25 +17,39 @@ float permutationsHelper(int total, int group1, int group2)
     }
 
     //TODO: Add assert check for comparision of group1 and group2
-    float prm = total;
+    int prm = total;
     int num = total;
     int dnm = group2;
+    vector<int> whatRemains;// that which isn't a factor to current value of prm
     while (num > group1+1)
     {
         prm *= (num - 1);
 
-        if (dnm > 1)
+        for (vector<int>::iterator itr=whatRemains.begin(); itr != whatRemains.end(); ++itr)
         {
-            prm /= dnm;
-            --dnm;
+            if (*itr != -1 && prm % *itr == 0)
+            {
+                prm /= *itr;
+                *itr = -1;
+            }
         }
-        --num;
-    }
 
-    while (dnm > 1)
-    {
-        prm /= dnm;
-        --dnm;
+        while (dnm > 1)
+        {
+            if (prm % dnm == 0)
+            {
+                prm /= dnm;
+                --dnm;
+            }
+            else
+            {
+                whatRemains.push_back(dnm);
+                --dnm;
+                break;
+            }
+        }
+
+        --num;
     }
 
     return prm;
@@ -44,7 +58,7 @@ float permutationsHelper(int total, int group1, int group2)
 int climbStair(int n)
 {
     int max2s=0;
-    int m= n;
+    int m = n;
     
     while (m >= 2)
     {
@@ -52,7 +66,7 @@ int climbStair(int n)
         m -= 2;
     }
 
-    float count = 1; // all ones
+    int count = 1; // all ones
     int ones = 0;
     if (m != 0)// is it odd or even
     {
@@ -73,15 +87,6 @@ int climbStair(int n)
         ones += 2;
     }
 
-    
-    int iCount = static_cast<int>(count);
-    if (count - iCount >= 0.5f)
-    {
-        return iCount + 1;
-    }
-    else
-    {
-        return iCount;
-    }
+    return count;
 }
 
