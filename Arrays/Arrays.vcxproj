@@ -140,14 +140,24 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Arrays.cpp" />
+    <ClCompile Include="BalanceArray.cpp" />
+    <ClCompile Include="BottomUpMergeSort.cpp" />
+    <ClCompile Include="HotelBooking.cpp" />
+    <ClCompile Include="MaxAreaOfTriangle.cpp" />
     <ClCompile Include="MinNumOfLights.cpp" />
     <ClCompile Include="MinStepsInfiniteGrid.cpp" />
+    <ClCompile Include="PerfectPeak.cpp" />
     <ClCompile Include="PickFromBothSides.cpp" />
     <ClCompile Include="SortArrayWithSquares.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BalanceArray.h" />
+    <ClInclude Include="BottomUpMergeSort.h" />
+    <ClInclude Include="HotelBooking.h" />
+    <ClInclude Include="MaxAreaOfTriangle.h" />
     <ClInclude Include="MinNumOfLights.h" />
     <ClInclude Include="MinStepsInfiniteGrid.h" />
+    <ClInclude Include="PerfectPeak.h" />
     <ClInclude Include="PickFromBothSides.h" />
     <ClInclude Include="SortArrayWithSquares.h" />
   </ItemGroup>

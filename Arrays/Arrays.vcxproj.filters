@@ -30,6 +30,21 @@
     <ClCompile Include="SortArrayWithSquares.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BottomUpMergeSort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PerfectPeak.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HotelBooking.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BalanceArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MaxAreaOfTriangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MinStepsInfiniteGrid.h">
@@ -42,6 +57,21 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="SortArrayWithSquares.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BottomUpMergeSort.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PerfectPeak.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HotelBooking.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BalanceArray.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MaxAreaOfTriangle.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
