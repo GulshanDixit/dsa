@@ -45,6 +45,9 @@
     <ClCompile Include="MaxAreaOfTriangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PascalTriangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MinStepsInfiniteGrid.h">
@@ -72,6 +75,9 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="MaxAreaOfTriangle.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PascalTriangle.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

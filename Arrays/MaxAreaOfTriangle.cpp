@@ -44,6 +44,27 @@ int maxAreaOfTriangle(vector<string>& B)
 
     int area = 0;
 
+    auto missingVertex = [](const char &s, const char &t) {
+        if (s != 'r' && t != 'r')
+        {
+            return 'r';
+        }
+        else if (s != 'g' && t != 'g')
+        {
+            return 'g';
+        }
+        else
+        {
+            return 'b';
+        }
+    };
+
+    auto storeMaxArea = [&](int& h1, int& h2, int maxWidth)
+    {
+        int aa = ceil(0.5 * (abs(h1 - h2) + 1) * (maxWidth + 1));
+        area = aa > area ? aa : area;
+    };
+
     for (int order = A.size() - 1; order > 0; --order)
     {
         // find height of particular order
@@ -53,69 +74,48 @@ int maxAreaOfTriangle(vector<string>& B)
         int maxWidthForCurrHeight = 0;
         int rows = A.size() - 1;
         cols = A[0].size() - 1;
-        pair<int, int> thirdPoint, firstPoint, secondPoint;
 
         for (int i = 0; i < heights.size(); ++i)
         {
-            firstPoint = heights[i].first;
-            secondPoint = heights[i].second;
-
             // the chars in that height section
-            char s = A[firstPoint.second][firstPoint.first];
-            char t = A[secondPoint.second][secondPoint.first];
+            const char *s = &A[heights[i].first.second][heights[i].first.first];
+            const char *t = &A[heights[i].second.second][heights[i].second.first];
 
-            int heightCol = firstPoint.first;
+            char missingChar = missingVertex(*s, *t);
+
+            const int *heightCol = &heights[i].first.first;
 
             for (int l = 0; l <= ceil(cols / 2); ++l)
             {
                 for (int k = 0; k <= ceil(rows / 2); ++k)
                 {
-                    char a = A[rows - k][cols - l];
-                    char b = A[rows - k][l];
-                    char c = A[k][cols - l];
-                    char d = A[k][l];
+                    const char* a = &A[rows - k][cols - l];
+                    const char* b = &A[rows - k][l];
+                    const char* c = &A[k][cols - l];
+                    const char* d = &A[k][l];
 
-                    auto checkDiff = [&s, &t](const char& z) { return !(z == s || z == t); };
-
-                    thirdPoint.first = -1;
-                    thirdPoint.second = -1;
-
-                    if (checkDiff(a) || checkDiff(c))
+                    if (*a == missingChar || *c == missingChar)
                     {
-                        if (abs((cols - l) - heightCol) > maxWidthForCurrHeight)
+                        if (abs((cols - l) - *heightCol) > maxWidthForCurrHeight)
                         {
-                            maxWidthForCurrHeight = abs((cols - l) - heightCol);
-                        }
-                        if (checkDiff(a))
-                        {
-                            thirdPoint = make_pair(rows - k, cols - l);
-                        }
-                        else
-                        {
-                            thirdPoint = make_pair(k, cols - l);
+                            maxWidthForCurrHeight = abs((cols - l) - *heightCol);
+                            storeMaxArea(heights[i].first.second, heights[i].second.second, maxWidthForCurrHeight);
                         }
                     }
-                    else if (checkDiff(b) || checkDiff(d))
+                    else if (*b == missingChar || *d == missingChar)
                     {
-                        if (abs(l - heightCol) > maxWidthForCurrHeight)
+                        if (abs(l - *heightCol) > maxWidthForCurrHeight)
                         {
-                            maxWidthForCurrHeight = abs(l - heightCol);
-                        }
-                        if (checkDiff(b))
-                        {
-                            thirdPoint = make_pair(rows - k, l);
-                        }
-                        else
-                        {
-                            thirdPoint = make_pair(k, l);
+                            maxWidthForCurrHeight = abs(l - *heightCol);
+                            storeMaxArea(heights[i].first.second, heights[i].second.second, maxWidthForCurrHeight);
                         }
                     }
+                }
 
-                    if (thirdPoint.first != -1 && thirdPoint.second != -1)
-                    {
-                        int aa = ceil(0.5 * (abs(firstPoint.second - secondPoint.second) + 1) * (maxWidthForCurrHeight + 1));
-                        area = aa > area ? aa : area;
-                    }
+                // check reduces number of iterations and improves preformance
+                if (abs(l - *heightCol) < maxWidthForCurrHeight && abs((cols - l) - *heightCol) < maxWidthForCurrHeight)
+                {
+                    break;
                 }
             }
         }
