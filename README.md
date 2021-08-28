@@ -2,16 +2,23 @@
 Data Structure and Algorithms practise
 
 # Problems
-All problems are sorted by a category they belong to. Currently the reference is leetcode top interview questions.
+All problems are sorted by a category they belong to. 
+Currently the reference are 
+leetcode top interview questions and
+interview bit questions.
+
+Each category has it's own visual studio project.
 
 # Dynamic programming
-Count Stair
+main funtion is present in Source.cpp
 
 | problem                                                                                                                                                                                 | solution                                                                                                                                                                              |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Count Stairs](https://leetcode.com/explore/interview/card/top-interview-questions-easy/97/dynamic-programming/569/)                                                                                                                         | [click](https://github.com/GulshanDixit/dsa/blob/main/Dynamic%20Programming/ClimbStair.cpp)                                                                                                                   |
 
 # Array
+main funtion is present in Arrays.cpp
+
 | problem                                                                                                                                                                                 | solution                                                                                                                                                                              |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Min Num Of Lights](https://www.interviewbit.com/problems/minimum-lights-to-activate/)                                                                                                                         | [click](https://github.com/GulshanDixit/dsa/blob/main/Arrays/MinStepsInfiniteGrid.cpp)                                                                                                                   |
@@ -22,3 +29,14 @@ Count Stair
 | [Hotel Booking](https://www.interviewbit.com/problems/hotel-bookings-possible/)| [click](https://github.com/GulshanDixit/dsa/blob/main/Arrays/HotelBooking.cpp)|
 | [Perfect Peak](https://www.interviewbit.com/problems/perfect-peak-of-array/)| [click](https://github.com/GulshanDixit/dsa/blob/main/Arrays/PerfectPeak.cpp)|
 | [Max Area of Triangle](https://www.interviewbit.com/problems/maximum-area-of-triangle/)| [click](https://github.com/GulshanDixit/dsa/blob/main/Arrays/MaxAreaOfTriangle.cpp)|
+| [Pascal Triangle](https://www.interviewbit.com/problems/pascal-triangle/)| [click](https://github.com/GulshanDixit/dsa/blob/main/Arrays/PascalTriangle.cpp)|
+
+
+
+# Binary Search
+main funtion is present in BinarySearch.cpp
+
+| problem                                                                                                                                                                                 | solution                                                                                                                                                                              |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Smaller Or Equal Elements](https://www.interviewbit.com/problems/smaller-or-equal-elements/)| [click](https://github.com/GulshanDixit/dsa/blob/main/BinarySearch/SmallerOrEqualElements.cpp)|
+| [Matrix Search]()| [click](https://github.com/GulshanDixit/dsa/blob/main/BinarySearch/SearchMatrix.cpp)|
