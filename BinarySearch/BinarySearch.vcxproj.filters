@@ -24,6 +24,18 @@
     <ClCompile Include="SearchMatrix.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SearchInsert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SquareRootOfInteger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MedianOfArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PowerFunction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SmallerOrEqualElements.h">
@@ -31,6 +43,18 @@
     </ClInclude>
     <ClInclude Include="SearchMatrix.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchInsert.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SquareRootOfInteger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PowerFunction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MedianOfArray.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

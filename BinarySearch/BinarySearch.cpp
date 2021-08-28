@@ -2,8 +2,12 @@
 //
 
 #include <iostream>
+#include <map>
 #include "SmallerOrEqualElements.h"
 #include "SearchMatrix.h"
+#include "SquareRootOfInteger.h"
+#include "PowerFunction.h"
+#include "MedianOfArray.h"
 using namespace std;
 
 
@@ -63,6 +67,7 @@ vector<vector<int>> getMatrix(string matrixStr)
 	return matrix;
 }
 
+
 int main()
 {
 	// Smaller Or Equal Elements
@@ -97,8 +102,33 @@ int main()
 	// ms
 
 	// square root of integer
-	
+	//for (int i = 0; i < 126; ++i)
+	//{
+	//	cout << sqrt(i) << " is sqrt of " << i;
+	//	cout << endl;
+	//}
+	//cout << sqrt(930675566) << endl;
+	//cout << sqrt(2147483647) << endl;
 	// sroi
+
+	// power
+	//cout << pow(-1,2,20) << endl;
+	//cout << pow(0,0,1) << endl;
+	//pow
+
+	// median sorted array
+	//vector<int> A{1, 4, 5, 9, 10, 12};
+	//vector<int> B{6, 11, 13, 15, 19};
+	//vector<int> A{1, 5, 9, 10, 12, 16, 24, 33};
+	//vector<int> B{6, 11, 13, 15, 19}; // 12
+	//vector<int> A{ 1, 4, 6, 8, 10 };
+	//vector<int> B{ 11, 12, 13, 14 , 19 }; // 10.5
+	//vector<int> A{20};
+	//vector<int> B{};
+	vector<int> A{ -50, -47, -36, -35, 0, 13, 14, 16 };
+	vector<int> B{ -31, 1, 9, 23, 30, 39 }; // 5
+	cout << findMedianSortedArrays(A, B);
+	// msa end
 
 }
 
