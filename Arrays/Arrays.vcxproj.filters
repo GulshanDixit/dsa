@@ -48,6 +48,12 @@
     <ClCompile Include="PascalTriangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SetMatrixZero.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RepeatAndMissingNumber.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MinStepsInfiniteGrid.h">
@@ -78,6 +84,12 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="PascalTriangle.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SetMatrixZero.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RepeatAndMissingNumber.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
