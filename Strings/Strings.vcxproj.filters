@@ -24,12 +24,24 @@
     <ClCompile Include="RestoreIpAddress.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="StrStr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MinCharToPalindrome.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MinCharToPalindrome.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Palindrom.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="RestoreIpAddress.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StrStr.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

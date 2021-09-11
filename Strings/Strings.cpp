@@ -4,6 +4,8 @@
 #include <iostream>
 #include "Palindrom.h"
 #include "RestoreIpAddress.h"
+#include "StrStr.h"
+#include "MinCharToPalindrome.h"
 
 
 int main()
@@ -34,5 +36,17 @@ int main()
     //vector<int> A{ -533, -666, -500, 169, 724, 478, 358, -38, -536, 705, -855, 281, -173, 961, -509, -5, 942, -173, 436, -609, -396, 902, -847, -708, -618, 421, -284, 718, 895, 447, 726, -229, 538, 869, 912, 667, -701, 35, 894, -297, 811, 322 };
     //cout << pairWithGivenDiff(A, 369);
     // end pair with given diff
+
+    // str str
+    cout << strStr("b", "b") << endl;
+    // end str str
+
+	// min characters to palindrome
+	//cout << minCharactersToMakePalindrome("abcda") << endl;
+	//cout << minCharactersToMakePalindrome("abcdba") << endl;
+	//cout << minCharactersToMakePalindrome("abcba") << endl;
+	cout << minCharactersToMakePalindrome("AACECAAAA") << endl;
+	cout << minCharactersToMakePalindrome("abs") << endl;
+	// end min characters to palindrome
 }
 
