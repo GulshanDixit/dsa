@@ -40,3 +40,11 @@ main funtion is present in BinarySearch.cpp
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Smaller Or Equal Elements](https://www.interviewbit.com/problems/smaller-or-equal-elements/)| [click](https://github.com/GulshanDixit/dsa/blob/main/BinarySearch/SmallerOrEqualElements.cpp)|
 | [Matrix Search]()| [click](https://github.com/GulshanDixit/dsa/blob/main/BinarySearch/SearchMatrix.cpp)|
+
+
+# Two Pointers
+main funtion is present in TwoPointers.cpp
+
+| problem                                                                                                                                                                                 | solution                                                                                                                                                                              |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Pair With Given Difference](https://www.interviewbit.com/problems/pair-with-given-difference/)| [click](https://github.com/GulshanDixit/dsa/blob/main/Two%20Pointers/PairWithGivenDiff.cpp)|
