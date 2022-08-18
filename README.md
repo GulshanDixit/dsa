@@ -48,3 +48,12 @@ main funtion is present in TwoPointers.cpp
 | problem                                                                                                                                                                                 | solution                                                                                                                                                                              |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Pair With Given Difference](https://www.interviewbit.com/problems/pair-with-given-difference/)| [click](https://github.com/GulshanDixit/dsa/blob/main/Two%20Pointers/PairWithGivenDiff.cpp)|
+
+
+# Common Algorithms Questions
+main funtion is present in Common Algorithms Questions.cpp
+
+| problem                                                                                                                                                                                 | solution                                                                                                                                                                              |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/description/)| [click](https://github.com/GulshanDixit/dsa/blob/main/Common%20Algorithms%20Questions/RightSideView.cpp)|
+| [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/description/)| [click](https://github.com/GulshanDixit/dsa/blob/main/Common%20Algorithms%20Questions/UniqueBST.cpp)|
