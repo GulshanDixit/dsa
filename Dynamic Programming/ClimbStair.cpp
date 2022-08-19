@@ -8,8 +8,9 @@ using namespace std;
 /// <param name="group1">higher count of the two</param>
 /// <param name="group2">lower count of the two</param>
 /// <returns></returns>
-int permutationsHelper(int total, int group1, int group2)
+int permutationsHelper(int group1, int group2)
 {
+    int total = group1 + group2;
     //(factorials[total] / (factorials[group1] * factorials[group2]));
     if (total == group1)
     {
@@ -55,6 +56,7 @@ int permutationsHelper(int total, int group1, int group2)
     return prm;
 }
 
+//https://leetcode.com/explore/interview/card/top-interview-questions-easy/97/dynamic-programming/569/
 int climbStair(int n)
 {
     int max2s=0;
@@ -67,23 +69,20 @@ int climbStair(int n)
     }
 
     int count = 1; // all ones
-    int ones = 0;
-    if (m != 0)// is it odd or even
+    int ones = m; // is it odd or even
+    int twos = max2s;
+
+    while (twos > 0)
     {
-        ones = 1;
-    }
-    
-    while (max2s > 0)
-    {
-        if (max2s > ones)
+        if (twos > ones)
         {
-            count += permutationsHelper(max2s + ones, max2s, ones);
+            count += permutationsHelper(twos, ones);
         }
         else
         {
-            count += permutationsHelper(max2s + ones, ones, max2s);
+            count += permutationsHelper(ones, twos);
         }
-        --max2s;
+        --twos;
         ones += 2;
     }
 
