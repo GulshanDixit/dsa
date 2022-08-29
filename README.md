@@ -30,7 +30,18 @@ main funtion is present in Arrays.cpp
 | [Perfect Peak](https://www.interviewbit.com/problems/perfect-peak-of-array/)| [click](https://github.com/GulshanDixit/dsa/blob/main/Arrays/PerfectPeak.cpp)|
 | [Max Area of Triangle](https://www.interviewbit.com/problems/maximum-area-of-triangle/)| [click](https://github.com/GulshanDixit/dsa/blob/main/Arrays/MaxAreaOfTriangle.cpp)|
 | [Pascal Triangle](https://www.interviewbit.com/problems/pascal-triangle/)| [click](https://github.com/GulshanDixit/dsa/blob/main/Arrays/PascalTriangle.cpp)|
+| [Intersection of Two Arrays II](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/674/)| [click](https://github.com/GulshanDixit/dsa/blob/main/Arrays/IntersectionOfArrays.cpp)|
 
+
+
+# String
+main funtion is present in Strings.cpp
+
+| problem                                                                                                                                                                                 | solution                                                                                                                                                                              |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Valid Palindrome](https://leetcode.com/explore/interview/card/top-interview-questions-easy/127/strings/883/)| [click](https://github.com/GulshanDixit/dsa/blob/main/Strings/Palindrome.cpp)|
+| [Restore IP Address](https://www.interviewbit.com/problems/valid-ip-addresses/)| [click](https://github.com/GulshanDixit/dsa/blob/main/Strings/RestoreIpAddress.cpp)|
+| [Locate Substring](https://www.interviewbit.com/problems/implement-strstr/)| [click](https://github.com/GulshanDixit/dsa/blob/main/Strings/StrStr.cpp)|
 
 
 # Binary Search
