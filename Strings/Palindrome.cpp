@@ -5,7 +5,7 @@ int isPalindrome(string A)
 {
     int start, end;
     start = 0;
-    end = A.size() - 1;
+    end = A.length() - 1;
 
     while (start <= end)
     {
