@@ -143,6 +143,7 @@
     <ClCompile Include="BalanceArray.cpp" />
     <ClCompile Include="BottomUpMergeSort.cpp" />
     <ClCompile Include="HotelBooking.cpp" />
+    <ClCompile Include="IntersectionOfArrays.cpp" />
     <ClCompile Include="MaxAreaOfTriangle.cpp" />
     <ClCompile Include="MinNumOfLights.cpp" />
     <ClCompile Include="MinStepsInfiniteGrid.cpp" />
@@ -157,6 +158,7 @@
     <ClInclude Include="BalanceArray.h" />
     <ClInclude Include="BottomUpMergeSort.h" />
     <ClInclude Include="HotelBooking.h" />
+    <ClInclude Include="IntersectionOfArrays.h" />
     <ClInclude Include="MaxAreaOfTriangle.h" />
     <ClInclude Include="MinNumOfLights.h" />
     <ClInclude Include="MinStepsInfiniteGrid.h" />

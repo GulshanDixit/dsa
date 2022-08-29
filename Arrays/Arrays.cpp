@@ -17,6 +17,7 @@
 #include "PascalTriangle.h"
 #include "SetMatrixZero.h"
 #include "RepeatAndMissingNumber.h"
+#include "IntersectionOfArrays.h"
 using namespace std;
 using namespace std::chrono;
 
@@ -143,6 +144,30 @@ int main()
     // ramn
 
     // 
+
+    // intersection of arrays
+    vector<int> nums1{ 1,2,2,1 };
+    vector<int> nums2{ 2,2 };
+    vector<int> nums3{ 4,9,5 };
+    vector<int> nums4{ 9,4,9,8,4 };
+
+    cout << "Nums1 and Nums2 Intersection: " << endl;
+
+    for ( int& i : intersect(nums1, nums2))
+    {
+        cout << i << " ";
+    }
+    cout << endl;
+
+    cout << "Nums3 and Nums4 Intersection: " << endl;
+
+    for (int& i : intersect(nums3, nums4))
+    {
+        cout << i << " ";
+    }
+    cout << endl;
+
+    // ioa
 
     // cal time of execution
     auto stop = high_resolution_clock::now();

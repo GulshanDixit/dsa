@@ -54,43 +54,49 @@
     <ClCompile Include="RepeatAndMissingNumber.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="IntersectionOfArrays.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MinStepsInfiniteGrid.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MinNumOfLights.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PickFromBothSides.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SortArrayWithSquares.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="BalanceArray.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BottomUpMergeSort.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PerfectPeak.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="HotelBooking.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BalanceArray.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MaxAreaOfTriangle.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MinNumOfLights.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MinStepsInfiniteGrid.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="PascalTriangle.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SetMatrixZero.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="PerfectPeak.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PickFromBothSides.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="RepeatAndMissingNumber.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SetMatrixZero.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SortArrayWithSquares.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IntersectionOfArrays.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
